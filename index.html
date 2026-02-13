@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Letters & Poems to Alizee</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* ---------- GENERAL ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    transition: background 0.6s ease;
+    min-height: 100vh;
+}
+
+/* Main soft pastel theme with florals */
+.soft-theme {
+    background: linear-gradient(135deg, #fef6f8 0%, #fff0f6 50%, #fef3f7 100%);
+    color: #2b2b2b;
+    position: relative;
+}
+
+.soft-theme::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle at 20% 80%, rgba(255, 182, 193, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 218, 224, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(255, 192, 203, 0.08) 0%, transparent 30%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Warm sunset/rose theme for letters */
+.letters-theme {
+    background: linear-gradient(135deg, #ffe4e1 0%, #ffd4cc 30%, #ffb6c1 70%, #ffa6b8 100%);
+    color: #4a2c2a;
+    position: relative;
+}
+
+.letters-theme::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle at 30% 20%, rgba(255, 140, 105, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 70% 80%, rgba(255, 182, 193, 0.2) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Dark elegant theme with gold accents for poems */
+.dark-theme {
+    background: linear-gradient(135deg, #2d1b2e 0%, #3d2b3e 50%, #4a3347 100%);
+    color: #f8f3f5;
+    position: relative;
+}
+
+.dark-theme::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(184, 134, 11, 0.06) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    margin: 60px 0 10px;
+    background: linear-gradient(135deg, #d4577d, #c45a85);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.dark-theme h1 {
+    background: linear-gradient(135deg, #d4af37, #f4d03f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 2px 8px rgba(212, 175, 55, 0.3));
+}
+
+.subtitle {
+    font-style: italic;
+    margin-bottom: 40px;
+    opacity: 0.85;
+    font-size: 1.1rem;
+}
+
+/* Floating floral elements for main screen */
+.floral-decoration {
+    position: fixed;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.floral-1 {
+    top: 10%;
+    left: 5%;
+    font-size: 80px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.floral-2 {
+    bottom: 10%;
+    right: 5%;
+    font-size: 70px;
+    animation: float 7s ease-in-out infinite reverse;
+}
+
+.floral-3 {
+    top: 50%;
+    right: 10%;
+    font-size: 60px;
+    animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+/* ---------- MAIN MENU ---------- */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 120px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.menu-card {
+    background: linear-gradient(135deg, #ffffff 0%, #fff5f8 100%);
+    padding: 70px 90px;
+    border-radius: 30px;
+    font-size: 1.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow:
+        0 10px 40px rgba(212, 87, 125, 0.15),
+        0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid rgba(255, 182, 193, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 182, 193, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.menu-card:hover::before {
+    left: 100%;
+}
+
+.menu-card:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow:
+        0 20px 50px rgba(212, 87, 125, 0.25),
+        0 8px 20px rgba(0, 0, 0, 0.12);
+    border-color: rgba(212, 87, 125, 0.5);
+}
+
+/* ---------- PHOTO SECTION ---------- */
+.photo-section {
+    margin-top: 80px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.photo-frame {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #fff5f8 100%);
+    border-radius: 25px;
+    box-shadow:
+        0 15px 50px rgba(212, 87, 125, 0.2),
+        0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(255, 182, 193, 0.4);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.photo-frame:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow:
+        0 20px 60px rgba(212, 87, 125, 0.3),
+        0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: rgba(212, 87, 125, 0.6);
+}
+
+.our-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.photo-shine {
+    position: absolute;
+    top: 20px;
+    left: -100%;
+    width: 50%;
+    height: calc(100% - 40px);
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 100%);
+    transform: skewX(-20deg);
+    animation: shine 3s infinite;
+    z-index: 2;
+    pointer-events: none;
+    border-radius: 15px;
+}
+
+@keyframes shine {
+    0% { left: -100%; }
+    20% { left: 100%; }
+    100% { left: 100%; }
+}
+
+/* ---------- GRID (Letters) ---------- */
+.grid {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px 70px;
+}
+
+.card {
+    background: linear-gradient(135deg, #fff 0%, #ffe4e1 100%);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow:
+        0 8px 25px rgba(255, 140, 105, 0.15),
+        0 3px 10px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    color: #5b3b5b;
+    font-size: 1.05rem;
+    border: 2px solid rgba(255, 182, 193, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.card::after {
+    content: '💌';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.card:hover::after {
+    transform: scale(1.3) rotate(10deg);
+    opacity: 0.6;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow:
+        0 15px 35px rgba(255, 140, 105, 0.25),
+        0 6px 15px rgba(0, 0, 0, 0.12);
+    border-color: rgba(255, 140, 105, 0.5);
+}
+
+/* ---------- POEMS LIST ---------- */
+.poem-list {
+    display: none;
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.poem-item {
+    padding: 25px 30px;
+    font-size: 1.3rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 2px solid rgba(212, 175, 55, 0.3);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.poem-item::before {
+    content: '✨';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.poem-item:hover::before {
+    opacity: 0.6;
+    right: 15px;
+}
+
+.poem-item:hover {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.08) 100%);
+    border-color: rgba(212, 175, 55, 0.6);
+    transform: translateX(10px);
+    box-shadow:
+        -5px 5px 20px rgba(212, 175, 55, 0.2),
+        0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- BACK ARROW ---------- */
+.back {
+    display: none;
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    font-size: 2rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.9);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    z-index: 100;
+}
+
+.dark-theme .back {
+    background: rgba(212, 175, 55, 0.2);
+    color: #d4af37;
+    border: 2px solid rgba(212, 175, 55, 0.4);
+}
+
+.letters-theme .back {
+    background: rgba(255, 255, 255, 0.9);
+    color: #d4577d;
+}
+
+.back:hover {
+    transform: scale(1.1) translateX(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- MODAL ---------- */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    position: relative;
+    background: linear-gradient(135deg, #fffef9 0%, #fff8f0 100%);
+    padding: 60px 50px;
+    width: 90%;
+    max-width: 750px;
+    border-radius: 25px;
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.3),
+        0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    line-height: 1.9;
+    max-height: 85vh;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    font-size: 1.15rem;
+    font-family: 'Dancing Script', cursive;
+    border: 3px solid rgba(255, 182, 193, 0.3);
+    animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dark-theme .modal-content {
+    background: linear-gradient(135deg, #2d1b2e 0%, #3d2b3e 100%);
+    color: #f8f3f5;
+    border-color: rgba(212, 175, 55, 0.4);
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #ffb6c1, #ffa6b8);
+    border-radius: 10px;
+}
+
+.dark-theme .modal-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #d4af37, #f4d03f);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 32px;
+    cursor: pointer;
+    color: #d4577d;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.dark-theme .close {
+    color: #d4af37;
+}
+
+.close:hover {
+    background: rgba(212, 87, 125, 0.1);
+    transform: rotate(90deg) scale(1.1);
+}
+
+.dark-theme .close:hover {
+    background: rgba(212, 175, 55, 0.15);
+}
+
+.hidden-content {
+    display: none;
+}
+
+.hidden-letter {
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+   
+    .menu {
+        gap: 40px;
+        margin-top: 80px;
+    }
+   
+    .menu-card {
+        padding: 50px 60px;
+        font-size: 1.5rem;
+    }
+   
+    .photo-section {
+        margin-top: 60px;
+        padding: 0 20px 60px;
+    }
+   
+    .photo-frame {
+        max-width: 100%;
+    }
+   
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px 50px;
+    }
+   
+    .modal-content {
+        padding: 40px 30px;
+        font-size: 1.05rem;
+    }
+}
+</style>
+</head>
+
+<body class="soft-theme">
+
+<!-- Floral decorations for main screen -->
+
+
+<div class="content-wrapper">
+
+<div class="back" id="backButton" onclick="goBack()">←</div>
+
+<div id="mainMenu">
+    <h1>For My Dearest Alizee</h1>
+    <p class="subtitle">Every word written with love</p>
+    <div class="menu">
+        <div class="menu-card" onclick="showLetters()">💌 Letters</div>
+        <div class="menu-card" onclick="showPoems()">🖋 Poems</div>
+    </div>
+      
+    <!-- Photo Section -->
+    <div class="photo-section">
+        <div class="photo-frame">
+          <img src="ourphoto.jpg" alt="Our Photo" class="our-photo">
+            <div class="photo-shine"></div>
+        </div>
+    </div>
+</div>
+
+    
+
+<!-- LETTERS SECTION -->
+<div class="grid" id="lettersSection">
+
+<div class="card" onclick="openContent('l1')">
+    Read this if you doubt how much I love you
+</div>
+
+<div class="card" onclick="openContent('l2')">
+    Read this when you're feeling insecure
+</div>
+<div class="card" onclick="openContent('l3')">Read this when you're having a bad day</div>
+<div class="card" onclick="openContent('l4')">Read this when you're stressed or overwhelmed</div>
+<div class="card" onclick="openContent('l5')">Read this when you're feeling lonely</div>
+<div class="card" onclick="openContent('l6')">Read this when you're sad</div>
+<div class="card" onclick="openContent('l7')">Read this when we're apart</div>
+<div class="card" onclick="openContent('l8')">Read this on a random day</div>
+<div class="card" onclick="openContent('l9')">Read this to remember why we're perfect together</div>
+<div class="card" onclick="openContent('l10')">Read this to see yourself through my eyes</div>
+<div class="card" onclick="openContent('l11')">Read this to remember our dreams</div>
+<div class="card" onclick="openContent('l12')">Read this when you think I won't understand</div>
+
+<!-- Hidden letter contents -->
+<div id="l1" class="hidden-letter">
+Read this if you doubt how much I love you:
+
+My dearest Alizee,
+If you're reading this, maybe you're having one of those days where doubt creeps in, whispering questions about us, about how I feel. So let me say this as clearly as I can, I love you more than words could ever fully capture.
+I love you in the quiet moments when you're just being yourself, in your laughter that lights up every room, in the way you see the world. I love you on your hardest days and your brightest ones. I love you when we're together and when we're apart, when you're confident and when you're uncertain.
+There's no version of my life that makes sense without you in it. You're not just someone I chose once, you're someone I choose every single day. When I think about my future, every dream, every plan, every hope has you woven into it, even a simple day when I'm just drinking chai.
+So when doubt whispers, remember this, my love for you isn't fragile or conditional. It's steady, it's certain, and it's yours completely. You are my person, Alizee, and nothing will ever change that.
+Forever yours,
+Alvi
+</div>
+
+<div id="l2" class="hidden-letter">
+Read this when you're feeling insecure:
+
+My dearest Alizee,
+I know sometimes insecurity creeps in, making you question yourself, your worth, or whether you're enough. So I'm writing this to remind you of what I see every single day.
+You are breathtakingly beautiful, inside and out. Not just in the obvious ways, but in the little things too the way you think, the way you care, the way you make everything around you better. Those things you criticize about yourself? I find them endearing. Those flaws you focus on? They don't exist my love.
+You are enough, Alizee. More than enough. You don't need to be perfect or have it all figured out. The person you are right now, with all your quirks and uncertainties, is exactly who I fell in love with.
+When you look in the mirror and doubt creeps in, I wish you could see yourself through my eyes, the kindness in your heart, the strength you don't even realize you have, the light you bring into my life.
+You are worthy of love, of happiness, of everything beautiful. And I'm so lucky you're mine.
+Always yours,
+Alvi
+</div>
+
+<div id="l3" class="hidden-letter">
+Read this when you're having a bad day:
+
+My dearest Alizee,
+I'm sorry you're having a rough day. I wish I could be there right now to hold you, to take away whatever's weighing on your heart. But since I can't be there this very moment, I hope these words bring you some comfort.
+
+Bad days are temporary, even when they feel endless. Whatever you're going through right now, it won't last forever I promise. You've gotten through hard days before, and you'll get through this one too. You're stronger than you give yourself credit for.
+
+It's okay to not be okay. You don't have to put on a brave face or pretend everything's fine. Feel what you need to feel. Cry if you need to. Rest if you're tired. Be gentle with yourself. You can do everything with me.
+
+Remember that you're not alone in this. I'm here, always. Even when we're apart, you're on my mind and in my heart. Lean on me whenever you need to.
+
+Tomorrow will be a new day, full of new possibilities but for now, just take it one moment at a time. You're going to be okay, Alizee. And I'll be right here beside you through it all.
+
+With all my love,
+Alvi
+</div>
+
+<div id="l4" class="hidden-letter">
+Read this when you're stressed or overwhelmed:
+
+My dearest Alizee,
+I can feel the weight you're carrying right now, and I wish I could lift it off your shoulders. I know everything feels like too much, like you're drowning in responsibilities and there's no end in sight. But I need you to pause for just a moment and breathe.
+
+You don't have to do it all at once. You don't have to be perfect. You don't even have to have it all figured out right now. It's okay to take things one step at a time, one hour at a time, one breath at a time.
+
+I know you're capable of incredible things, but you're also human. You're allowed to feel overwhelmed. You're allowed to ask for help. You're allowed to rest without guilt.
+
+Whatever you're dealing with, we'll get through it together. You're not in this alone. I'm here to support you, to remind you of your strength when you forget, and to carry some of the weight when it gets too heavy.
+
+You're doing better than you think you are, Alizee. I'm so proud of you, not just for what you accomplish, but for who you are and how hard you try, even on the toughest days.
+
+Take a deep breath. You've got this. And I've got you.
+
+Always here for you,
+Alvi
+</div>
+
+<div id="l5" class="hidden-letter">
+Read this when you're feeling lonely:
+
+My dearest Alizee,
+I hate that you're feeling lonely right now. I wish I could be there with you, holding you close, reminding you that you're never truly alone.
+
+Even when we're apart, you're always with me. You're in my thoughts when I wake up, in my heart throughout the day, and in my dreams when I fall asleep. Distance might separate our bodies, but it can't touch what we have.
+
+I know loneliness can feel heavy, especially in the quiet moments. But I want you to remember that this feeling is temporary. We'll be together again, and until then, I'm just a message, a call, a thought away.
+
+You are loved, Alizee. Deeply, completely, unconditionally. Even when I'm not physically there, my love surrounds you like a warm embrace.
+
+Close your eyes and imagine me there with you. Picture my arms around you, hear me telling you how much you mean to me, feel the comfort of knowing someone out there thinks you're the most incredible person in the world.
+
+Because that's exactly what I'm doing right now, thinking of you, missing you, and counting down the moments until I can see you again.
+
+You're never alone, my love. Not really. I'm always with you, in every way that matters.
+
+Missing you endlessly,
+Alvi
+</div>
+
+<div id="l6" class="hidden-letter">
+Read this when you're sad:
+
+My dearest Alizee,
+I can see the sadness in your eyes, even from far away, and it breaks my heart. I wish I could take away whatever pain you're feeling and carry it for you.
+
+It's okay to be sad. You don't have to hide it or push it down or pretend everything's fine. Feel what you're feeling. Let the tears come if they need to. There's no shame in being human, in having emotions, in hurting.
+
+But while you're in this moment, I want you to know something, this sadness doesn't define you. It's just a chapter, not the whole story. You've felt joy before, and you'll feel it again. Happiness will find its way back to you.
+
+I'm here for you, in the sadness and in the joy, in the hard days and the easy ones. You don't have to go through this alone. Talk to me, cry with me, let me be there for you in whatever way you need.
+
+You are so much stronger than you realize, Alizee. You've weathered storms before and come out the other side. This one won't break you either.
+
+And when you're ready, when the sadness starts to lift, I'll be here to celebrate the light returning to your eyes, to see that beautiful smile again, to remind you of all the good things still waiting for you.
+
+Until then, I'm here. Always.
+
+Loving you through it all,
+Alvi
+</div>
+
+<div id="l7" class="hidden-letter">
+Read this when we're apart:
+
+My dearest Alizee,
+Being away from you is one of the hardest things I have to endure. Every moment we're apart, I feel your absence like a missing piece of myself.
+
+I miss everything about you. Your laugh that makes everything feel lighter. Your voice that I could listen to for hours. The way you look at me like I'm the only person in the room. The warmth of your hand in mine. The comfort of just being near you.
+
+But here's what I hold onto, distance is temporary. What we have isn't. Our love doesn't weaken because we're not in the same place. If anything, being apart reminds me just how much you mean to me, how deeply you've woven yourself into my life.
+
+Every sunrise brings me one day closer to seeing you again. Every sunset is another day we've made it through. And when we finally reunite, it'll be like no time has passed at all, except we'll appreciate each other even more.
+
+Until then, know that you're with me in every moment. I see something beautiful and wish you were here to see it too. I hear a song and think of you. I dream about the next time I get to hold you.
+
+Distance might keep us apart physically, but nothing can separate our hearts.
+
+I'm counting down the days, the hours, the minutes until I can see you again. And when that moment comes, I'm never letting you go.
+
+Missing you more than words can say,
+Alvi
+</div>
+
+<div id="l8" class="hidden-letter">
+Read this on a random day:
+
+My dearest Alizee,
+There's no special occasion for this letter. You're not sad, or stressed, or doubting. Maybe you're just having a regular day, going about your routine, and stumbled upon this.
+
+But I wanted you to know that even on the ordinary days, the ones that blend together and don't seem particularly special, you're extraordinary to me.
+
+I love you on the exciting days and the boring ones. On the days when you accomplish great things and the days when you just manage to get through. On the days when you feel beautiful and the days when you're in your comfiest clothes with messy hair.
+
+You don't have to be doing anything remarkable to be remarkable to me. You just have to be you.
+
+So today, this random, unremarkable day, I want you to remember that you're loved. Not because you did something to earn it, but simply because you exist.
+
+You make my life better just by being in it. You make ordinary days feel special. You turn routine moments into memories.
+
+I hope today is good to you, Alizee. And if it's not, I hope tomorrow is better. Either way, I'll be here, loving you through all of it.
+
+Just because,
+Alvi
+</div>
+
+<div id="l9" class="hidden-letter">
+Read this to remember why we're perfect together:
+
+My dearest Alizee,
+Sometimes I stop and think about how perfectly we fit together, and it amazes me every single time.
+
+We balance each other in the most beautiful ways. Where I'm weak, you're strong. Where you doubt, I believe. We complement each other like two pieces of a puzzle that were always meant to connect.
+
+But it's more than just balance. It's the way we make each other better. You inspire me to be kinder, more patient, more thoughtful. You challenge me to grow. You make me want to be the best version of myself, not because you demand it, but because you deserve it.
+
+We laugh at the same silly things. We can sit in comfortable silence. We can talk for hours about everything and nothing. We dream about the same future. We want the same kind of life, filled with love, adventure, and quiet moments of peace.
+
+Even our differences make us stronger. They give us new perspectives, teach us patience, help us understand the world more fully.
+
+This isn't just compatibility, Alizee. This is something rare and precious. This is the kind of connection people search their whole lives for and sometimes never find.
+
+We found it in each other. And that's pretty incredible.
+
+So when you wonder if we're meant to be, remember this, nothing in my life has ever felt as right as loving you.
+
+Forever grateful for us,
+Alvi
+</div>
+
+<div id="l10" class="hidden-letter">
+Read this to see yourself through my eyes:
+
+My dearest Alizee,
+I wish you could see yourself the way I see you, even for just a moment. Because what I see takes my breath away every single day.
+
+I see someone beautiful, not just in appearance, though you are absolutely stunning, but in the way you move through the world with grace and kindness.
+
+I see someone strong, who faces challenges with courage even when you're scared, who keeps going even when it's hard, who lifts others up even when you're struggling yourself.
+
+I see someone intelligent and thoughtful, whose mind I admire as much as everything else about you, who sees things I miss, who makes me think deeper and feel more.
+
+I see someone with a heart so full of love and compassion that it spills over onto everyone around you. You make people feel seen, heard, valued.
+
+I see your quirks as endearing, your imperfections as part of what makes you human and real and infinitely more lovable.
+
+I see all the potential you don't see in yourself, all the incredible things you're capable of, all the ways you're already amazing without even trying.
+
+When you look in the mirror and find flaws, I see only beauty. When you doubt yourself, I see only capability. When you feel ordinary, I see someone extraordinary.
+
+That's what I see when I look at you, Alizee. I see the love of my life, my best friend, my future. I see everything I could ever want and more than I ever dreamed of finding.
+
+I see you, truly see you, and I love every single thing I see.
+
+In awe of you always,
+Alvi
+</div>
+
+<div id="l11" class="hidden-letter">
+Read this to remember our dreams:
+
+My dearest Alizee,
+Do you remember all the dreams we've shared? The plans we've made in whispered conversations and sleepy late-night talks?
+
+I remember every single one.
+
+I remember talking about the places we want to see together, the adventures we'll have, the memories we'll create. I can picture us exploring new cities, trying new foods, getting lost and laughing about it later.
+
+I remember dreaming about the home we'll build together, not just a house, but a space filled with warmth and love and laughter. A place where we can be completely ourselves, where we can create a life that feels like ours.
+
+I remember talking about the simple things too, quiet mornings with coffee, cooking dinner together, movie nights curled up on the couch, growing old and still finding new things to love about each other.
+
+These aren't just fantasies, Alizee. These are the blueprints for our future. Every dream we share is another thread connecting us to the life we're building together.
+
+And the beautiful thing is, we're already living some of these dreams. Every moment we spend together, every laugh we share, every obstacle we overcome, we're turning dreams into reality.
+
+The best part? We still have so many more dreams to dream together, so many more plans to make, so many more adventures waiting for us.
+
+Our future is bright, Alizee, because we're creating it together. And I can't wait to see every dream we've shared come to life.
+
+Dreaming with you always,
+Alvi
+</div>
+
+<div id="l12" class="hidden-letter">
+Read this when you think I won't understand:
+
+My dearest Alizee,
+Maybe you're going through something you think I won't get. Maybe you're feeling things you're afraid to share because you worry I won't understand.
+
+But I want you to know something important, even if I don't fully understand what you're going through, I will always try. I will listen without judgment. I will hold space for your feelings without trying to fix them. I will be there for you, even in the moments I can't fully comprehend.
+
+Understanding isn't always about having experienced the exact same thing. Sometimes it's about empathy, about caring enough to try to see the world through your eyes, about loving someone enough to validate their feelings even when they're different from your own.
+
+You can tell me anything, Alizee. Your fears, your worries, your doubts, your struggles. Nothing you say will push me away. Nothing you feel will make me love you less.
+
+I won't always have the perfect words. I might not always know exactly what to say or do. But I will always show up for you. I will always care. I will always try to understand, and when I can't, I will simply be there beside you.
+
+You don't have to go through anything alone, even the things you think no one else would understand. I'm here, and I'm not going anywhere.
+
+Talk to me. Let me in. Let me try to understand. And even if I can't grasp every detail, I promise I'll understand the most important thing that you're hurting, and you need support, and I love you enough to give you exactly that.
+
+Always here to listen,
+Alvi
+</div>
+
+</div>
+
+<!-- POEMS SECTION -->
+<div class="poem-list" id="poemsSection">
+    <h1>Poems for Alizee</h1>
+    <p class="subtitle">Words from my heart to yours</p>
+   
+    <div class="poem-item" onclick="openContent('p1')">The greatest art</div>
+    <div class="poem-item" onclick="openContent('p2')">If beauty had a heartbeat</div>
+    <div class="poem-item" onclick="openContent('p3')">Alizee my sweetest song</div>
+    <div class="poem-item" onclick="openContent('p4')">Always here for you</div>
+    <div class="poem-item" onclick="openContent('p5')">Etched in my mind</div>
+    <div class="poem-item" onclick="openContent('p6')">How much I love you</div>
+    <div class="poem-item" onclick="openContent('p7')">The dawn breaking through my window</div>
+    <div class="poem-item" onclick="openContent('p8')">The way you glow</div>
+    <div class="poem-item" onclick="openContent('p9')">An angel just for me</div>
+    <div class="poem-item" onclick="openContent('p10')">The secret I can't keep</div>
+    <div class="poem-item" onclick="openContent('p11')">Waiting for you</div>
+    <div class="poem-item" onclick="openContent('p12')">Like the ocean loves the moon</div>
+    <div class="poem-item" onclick="openContent('p13')">My first real sunrise</div>
+    <div class="poem-item" onclick="openContent('p14')">Nature's masterpiece</div>
+    <div class="poem-item" onclick="openContent('p15')">How I melt</div>
+    <div class="poem-item" onclick="openContent('p16')">The summer</div>
+    <div class="poem-item" onclick="openContent('p17')">Monsoon</div>
+    <div class="poem-item" onclick="openContent('p18')">The best part of me</div>
+    <div class="poem-item" onclick="openContent('p19')">Her smile</div>
+    <div class="poem-item" onclick="openContent('p20')">The moon is a rough draft</div>
+</div>
+
+<!-- Hidden poem contents -->
+<div id="p1" class="hidden-content">
+You make the world look unfinished by comparison,
+like the artist spent all their genius on your eyes
+and had nothing left for the rest of creation,
+those eyes that hold entire galaxies
+the night sky keeps trying to imitate.
+Your smile could make the sun reconsider its career,
+pack up its light and admit defeat gracefully.
+I've seen flowers wilt in your presence,
+not from shame, but from understanding
+they were only ever rehearsals for your lips.
+The curve of your face makes geometry sacred,
+every angle a proof that mathematics
+was invented just to fail at describing you.
+Michelangelo would have broken his chisel
+and quit, knowing his hands could never.
+Your hair moves like it's conducting symphonies
+the wind writes specifically for you,
+each strand catching light the way
+some people catch lightning, impossible,
+devastating, once in a lifetime.
+Even the way you breathe is beautiful,
+like your lungs are doing the world a favor
+by existing in it, by proving that grace
+can be as simple as the rise and fall
+of someone too perfect to be accidental.
+You walk and suddenly every painting ever made
+looks like a rough draft, every statue
+just practice for a masterpiece
+that can't be carved from marble
+because it needs to move, to live, to be you.
+The world looks unfinished because it is
+it was never meant to be complete.
+It was only ever meant to be the stage
+where you exist, radiant and impossible,
+making everything else look like it's still waiting to be born.
+</div>
+
+<div id="p2" class="hidden-content">
+If beauty had a heartbeat  it would sound like you walking into a room
+the soft percussion of your footsteps,
+a rhythm that makes the air itself hold its breath,
+then remember it has a reason to move.
+Every door you pass through becomes a threshold
+between the ordinary world and something dangerous,
+the kind of danger that makes my pulse quicken.
+When you enter, the space rearranges itself
+around the gravity of your presence,
+conversations pause mid sentence,
+glances lift and linger,
+and I'm the one trying to look casual
+while my heartbeat syncs to yours
+like it knows something I'm still learning.
+If beauty had a heartbeat, it would pulse
+in the way you tuck your hair behind your ear,
+a gesture so simple it should be illegal,
+the way you move through a room
+like you own every molecule of air,
+and maybe you do,
+maybe that's why I can't quite catch my breath
+when you look at me like that.
+You walk in and suddenly I'm aware
+of every inch of space between us,
+a distance that feels like both a dare
+and an invitation,
+and I am the lucky one who gets to close it,
+who knows this rhythm by heart,
+who feels it echo in my chest
+every time you walk into a room,
+every time you walk toward me
+with that smile that says you know exactly
+what you're doing to me,
+like the first time,
+like the best song I've ever heard,
+like trouble I want to get into
+again and again
+</div>
+
+<div id="p3" class="hidden-content">
+In morning light, you are the gentle glow,
+The warmth that makes my weary spirit grow.
+Your laughter dances like the summer breeze,
+Turning ordinary moments into memories.
+When shadows fall and doubts begin to creep,
+Your voice becomes the comfort that I keep.
+Each word you whisper, every tender glance,
+Reminds me how we found this perfect dance.
+Through seasons changing, through the joy and strife,
+You've painted colors in my black and white life.
+Your hand in mine makes every journey clear,
+And chases away my every lingering fear.
+The way you smile can light the darkest night,
+Your presence turns what's wrong into what's right.
+In you I've found what I've been searching for,
+A love that grows forever, evermore.
+Alizee, my love, my sweetest song,
+With you is the only place I belong.
+</div>
+
+<div id="p4" class="hidden-content">
+When the world feels sharp and everyone's too much,
+When patience wears thin and you're losing touch
+With the calm you once knew, the peace you once had,
+When every small thing just makes you feel bad
+I want you to know that this moment will pass,
+That storms always settle, that nothing can last
+Forever this heavy, this tense, or this gray,
+And I'm here beside you, it will be okay love.
+Let them be difficult, let them be wrong,
+You don't have to carry this weight all day long.
+You're allowed to be tired, frustrated, and done,
+To step back and breathe till you feel like yourself again.
+You're stronger than all of this noise and this stress,
+More resilient than you give yourself credit for,
+But even if you weren't, even if you felt small,
+I'd still be right here, and we'd get through it all.
+So close out the chaos, let go for tonight,
+Tomorrow's a fresh start, a chance to reset right.
+Whatever comes next, we'll figure it out our way,
+Just hold onto this: love, it will be okay.
+</div>
+
+<div id="p5" class="hidden-content">
+If I had a flower for every time you crossed my mind,
+I'd need acres upon acres, stretching far behind
+The hills and valleys, meadows without end
+A wilderness of blooms around each bend.
+Petals soft as morning, stems that never break,
+Roots that dig down deep with every breath I take.
+Roses for the laughter, lilies for your smile,
+Sunflowers turning toward you all the while.
+I'd wander through these pathways worn by years,
+Watered by my wonder, and sometimes by my tears.
+Each blossom holds a memory, a moment, or a dream,
+And still they keep on growing by the stream.
+The seasons couldn't stop them, nor could winter's chill
+These flowers fed by thinking of you still and still and still.
+An infinite garden, forever in full bloom,
+Because you occupy each corner of each room
+Inside my mind. So yes, I'd walk forever here,
+Among the proof that you are always near
+Not trapped, but grateful for this endless sprawl,
+This garden born from thinking of you most of all.
+</div>
+
+<div id="p6" class="hidden-content">
+I love the way you make everything brighter,
+how the whole world shifts when you walk in,
+like someone turned the colors up,
+like the day can finally begin.
+I love how you laugh at my jokes,
+even the terrible ones I probably shouldn't say,
+and how your smile does something to my chest
+that I don't quite have the words to explain.
+I love the sound of your voice on the phone,
+the way you tell me about your day,
+how even the small stuff feels important
+when it's coming from you, in your way.
+I love that you're the first person I want to tell
+when something good happens, or bad, or just strange,
+how you've become my favorite person to talk to,
+how everything's better since you came.
+I love the way I feel when I'm with you,
+like I can breathe deeper, like I'm more myself,
+like all the noise quiets down for a while
+and nothing else matters, just you, nothing else.
+I love you more than I know how to say,
+more than these words will ever quite do
+but I wanted to try anyway,
+because you deserve to know: I really, really love you.
+</div>
+
+<div id="p7" class="hidden-content">
+You are the softest dawn breaking through my window,
+the kind of light that makes the whole world gentler,
+turning ordinary moments into something I want to remember.
+When you laugh, it's like watching flowers bloom in fast motion
+sudden, unexpected, impossible not to smile at.
+I catch myself staring sometimes(sorry pyar hai na), forgetting what I was going to say,
+lost in the way you move through the world
+like you were made of something finer than the rest of us.
+Your beauty isn't something I can point to and name
+it's in the curve of your smile when you're trying not to laugh,
+the way your eyes shimmer when you're not paying attention,
+the quiet grace in when your eyes meet mine.
+I've memorised the exact shade of gold the sun brings out in your eyes,
+the way you look at me like I'm someone worth looking at (thought I'm not)
+You are every lovely thing I never knew how to ask for,
+wrapped up in one person who somehow chose to stay.
+And I am grateful, every single day,
+for the privilege of loving someone so beautiful.
+</div>
+
+<div id="p8" class="hidden-content">
+She moves through rooms the way light moves through water
+not the harsh glare of noon, but the secret kind,
+the bioluminescent blue that only shows itself
+when darkness is complete and something stirs the surface.
+I have seen mountains break the morning open,
+watched storm clouds gather like bruised fruit,
+stood beneath waterfalls that turn the air to mist
+but nothing stops me like the way she laughs.
+There are mornings when dew clings to spider silk,
+each drop a prism holding all the colors
+the world forgot it had. That's what it's like
+when she looks at me and really sees.
+They say the ocean glows because of disturbance,
+millions of small lives flaring in response to touch.
+Maybe that's all love is, the way we illuminate
+each other's depths, the hidden things made visible,
+the proof that beauty isn't always still or silent
+but sometimes needs the motion, the reaching out,
+the risk of stirring up the dark to find
+what's been there all along, waiting to shine.
+</div>
+
+<div id="p9" class="hidden-content">
+You don't know what it's like to look at a person and think that God put an angel on earth just for you
+To see heaven's architect at work in every detail,every curve of her smile, every strand of hair,as if the universe conspired across millennia just to place her in your path.
+You don't know what it's like when she looks back,how her eyes hold the power to unmake you completely,to dissolve every defense you've carefully constructed, leaving you bare and breathless and somehow more alive than you've ever been, leveled by love,brought to your knees by beauty.
+And you don't know what it's like to be drowning in your own darkness, sinking in the depths of hell, only to feel her hand reach through the flames, her voice cut through the chaos, her presence alone enough to pull you back to the surface, to the light, to yourself.
+She is both the storm and the shelter,the question and the answer,the one who can destroy you with a glance and rebuild you with the same eyes,  an angel who chose to love a mortal soul, and somehow, impossibly, I hope that soul is mine.
+</div>
+
+<div id="p10" class="hidden-content">
+There are words that live behind my teeth,
+soft syllables that catch and hold
+they gather in the spaces where I breathe,
+warm and patient, never growing old.
+I watch the way you move through life,
+how you light mine up without trying,
+the strength in you that quietly blooms
+when others would be crying.
+You solve the puzzles I can't see,
+you're kind when kindness costs you more,
+and somewhere in your bravery
+is everything I'm living for.
+Perhaps you've felt it in the pause,
+the moment right before goodbye,
+or in my laugh without a cause
+when brilliance flashes in your eye.
+I marvel at the way you think,
+the grace in how you choose your fights,
+how you can pull me from the brink
+of my own darker, smaller nights.
+This feeling doesn't ask for grand confession,
+doesn't need a stage or perfect time.
+it lives in every small expression,
+in the way your rhythm matches mine.
+Someday these words might find their way
+from where they wait inside my chest,
+but even if they never stray,
+you are the silence I love best
+The one I'm awed by, late at night,
+when all the world has gone to sleep,
+you are my wonder and my light,
+the only secret I can't keep.
+</div>
+
+<div id="p11" class="hidden-content">
+I wait like winter waits for spring,
+Through frozen days and silent nights,
+For you to be my everything,
+To hold you close when time is right.
+My heart is like the ocean's tide
+That reaches, yearns, pulls toward the shore,
+This love I carry deep inside
+Grows stronger, deeper, more and more.
+I watch the seasons turn and change,
+The way the earth awaits the rain,
+This longing I cannot arrange
+Sweet hope mixed tenderly with pain.
+I want to be your shelter, home,
+The place where you can always rest,
+No more to wait, no more to roam,
+Just you and I, forever blessed.
+Like roots that search through soil for ground,
+Like stars that seek the velvet night,
+I ache for that day I have found
+You're mine at last, and all is right.
+The days stretch long, the nights move slow,
+As patient as the mountains stand,
+But darling, I just need you to know
+I'm waiting here with open hand.
+For you're the answer to each unsaid prayer,
+The dream I hold with all my might,
+And when you're finally mine to share,
+My world will bloom with endless light.
+</div>
+
+<div id="p12" class="hidden-content">
+I love you like the ocean loves the moon,
+Pulled endlessly by gravity's embrace,
+While you pass by like afternoon
+A gentle presence, leaving little trace.
+My heart is thunder, yours a quiet breeze,
+Mine crashes wild against the shore,
+While yours moves softly through the trees,
+Not matching what I'm aching for.
+I am the desert craving rain,
+Each drop a treasure, sacred, rare,
+But you're the sky, you can't contain
+The thirst that leaves me standing there.
+You'll never love me as I love you,
+Not with this fire, this desperate need,
+Like flowers turning toward the dew,
+While you're the sun that won't take heed.
+I am the mountain, fixed and tall,
+Wearing my heart upon my stone,
+And you're the wind that's free to fall
+Wherever you have lightly flown.
+Perhaps some loves are meant to burn
+With different flames on either side,
+Where one will wait but never learn
+To match the other's aching tide.
+Still, I would rather love this way,
+Completely, deeply, all alone,
+Than never feel what poets say;
+This unequal tone.
+</div>
+
+<div id="p13" class="hidden-content">
+I've seen a thousand sunsets fade,
+But none have burned the way you do,
+A fire in my chest you've made
+This feeling, my love, is brand new.
+I thought I knew what love could be,
+Like knowing rain but never storms,
+But then you came and showed to me
+A passion that transforms and warms.
+I've never felt my heart race fast
+Like rivers rushing toward the sea,
+Or known a joy so deep and vast
+It changes every part of me.
+You are the first dawn I've truly seen,
+Though I've watched morning break before,
+The first time colors breathe and gleam
+I've never loved like this before.
+My chest expands like summer skies,
+So endless, boundless, wide and blue,
+And in the wonder of your eyes
+I find a world completely new.
+This isn't something I have known,
+This earthquake feeling, wild and free,
+Like seeds that finally have grown
+Into a mighty, ancient tree.
+So understand when I confess
+This truth my soul cannot ignore
+You've filled me with a tenderness
+I've never, ever felt before.
+</div>
+
+<div id="p14" class="hidden-content">
+Her eyes hold depths like forest pools,
+Where sunlight plays and dances,
+Reflecting back the sky's own jewels
+In quiet, captivating glances.
+Her laugh rings out like morning birds
+That greet the sun with joyful song,
+A melody beyond mere words
+That lifts my spirit all day long.
+Her hair cascades like waterfall streams,
+Catching light in every strand,
+More lovely than the sunset's beams
+As golden rays touch sea and sand.
+Her smile blooms like wildflowers do
+In mountain meadows, fresh and bright,
+A garden growing ever new
+That turns the ordinary to light.
+Her grace moves like the willow bends,
+Resilient, gentle, ever strong,
+Like rivers flowing 'round the bends,
+She makes the world a place to belong.
+In her I see the earth's own art
+The moon, the stars, the morning dew
+For nature's masterpiece, her heart,
+Reminds me life is always new.
+</div>
+
+<div id="p15" class="hidden-content">
+Even the glaciers of Antarctica would melt after seeing you
+not from the slow burn of climate change,
+but from something beautiful, instant, catastrophic,
+the kind of warmth that rewrites the laws of physics.
+Ice shelves that have stood for millennia
+would surrender in a single glance,
+their ancient cold no match
+for the fever you bring into a room.
+The penguins would have to relocate,
+the seals find new floating homes,
+all because you smiled once
+and the southern ice cap gave up its fight.
+Scientists would scramble for explanations,
+publish papers on the unprecedented thaw,
+never knowing the real cause was simpler.
+You.
+Existing, devastating in your ordinary magnificence.
+Even the frozen heart of the world
+has its breaking point, its moment of weakness
+one look at you and it remembers
+what it feels like to be liquid, alive, undone.
+</div>
+
+<div id="p16" class="hidden-content">
+She is the first warm day after winter,
+when you step outside and remember
+what it means to bloom,
+and everything inside you whispers
+this is what I was waiting for.
+
+I have tried to explain her to my friends
+but how do you describe
+the way starlight feels on your fingertips,
+or why certain moments
+make your heart so full
+it spills over into your smile?
+
+Her laugh is honey and wind chimes,
+softer than rain on rose petals,
+sweeter than the first sip of morning,
+the kind of music that reminds you
+the world was made
+for beautiful things.
+
+When she smiles at me
+time folds itself into origami.
+delicate, intentional, perfect,
+and I become someone who believes
+in magic and destiny
+and all the tender impossible things
+poets have been trying to name
+since the beginning of words.
+
+She moves through the world
+like a secret the sunrise keeps,
+like grace learned to walk,
+and I'm just grateful to orbit
+in her gentle light.
+
+Her eyes hold kindness like gardens hold rain.
+Her hands know the language of comfort.
+She turns ordinary moments like:
+shared silence,
+afternoon sunlight,
+the space beside me,
+into small forevers
+I want to live inside.
+
+I don't know if love
+is supposed to feel this easy,
+like coming home,
+like every good thing
+you'd forgotten to hope for
+arriving all at once,
+like learning you've been half-asleep
+your whole life
+until she woke you with her presence.
+
+She is my favorite song,
+my softest landing,
+my reason for believing
+that some people are born
+to teach other people
+what it means to be alive.
+
+And I am just here,
+endlessly grateful,
+learning new ways to say
+thank you
+for the miracle of her.
+</div>
+
+<div id="p17" class="hidden-content">
+She moves like monsoon wind through temple bells,
+a grace that makes the lotus bow its head
+her laughter spills like jasmine down the wells
+of every silent thing I've left unsaid.
+
+I'm tangled in the silk of her curly hair,
+caught in the amber of her sideways glance,
+the way she folds her hands in evening prayer,
+the gentle sway of her unconscious dance.
+
+Her voice, a tonal music I can't speak
+but feels like rain on streets,
+makes strong men stumble, turns the proud one meek.
+
+I'm drowning in the honey of her skin,
+the curve of cheekbone, smile that breaks like dawn
+she's every myth and mystery within,
+and I'm the fool who's hopelessly, blissfully drawn.
+
+She says my name and continents collapse,
+the Chao Phraya flows straight through my chest
+I'm lost in her like some love-stricken maps
+that chart no country but her tenderness.
+
+What have you done to me, my rose?
+I'm yours completely, past all sense or rhyme.
+a heart that speaks the only truth it knows:
+I'd cross the world for you, again, each time.
+</div>
+
+<div id="p18" class="hidden-content">
+There's something in the way you laugh
+so loud it fills the entire room with contagious joy,
+the kind that chases off the gloom.
+
+Your mind moves quick like a spark or a flame,
+you see the world in shades I miss,
+and when you speak, I lean in close,
+afraid to lose a word of this.
+
+You're stronger than you think you are,
+though doubt sometimes clouds your eyes,
+I see clearly what you can't,
+the grace in how you always rise.
+
+Your kindness isn't loud or showy,
+just there.
+Like breathing, like the sun,
+the way you care for those around you,
+the battles you've won quietly.
+
+And that's why I'm so sure,
+leaving will never cross my mind
+it's hard to walk away from light,
+from someone rare someone true and someone kind.
+
+So if you ever wonder I'll stay,
+just look at all you are, and see
+how could I ever let you go
+when you're the best part of me?
+</div>
+
+<div id="p19" class="hidden-content">
+It starts like sunrise slow and warm,
+a gentle curve that breaks the quiet,
+spreading light across her face
+until her eyes join in, conspiring
+to undo me completely.
+
+There's a brightness there I can't quite name,
+the kind that lingers after she's turned away,
+imprinted on the moment like a photograph,
+like proof that something perfect
+happened right in front of me.
+
+When she smiles, the world feels smaller,
+softer at the edges,
+like every worry I've been carrying
+suddenly weighs a little less,
+and all I want is to be the reason
+it appears again.
+
+I've memorized the way her cheeks rise,
+the crinkle at the corners of her eyes,
+the unguarded joy that makes her
+more beautiful than any word I know
+and still, I'd spend forever
+trying to describe it.
+
+Because her smile isn't just something I see.
+It's something I feel,
+A feeling as warm as sunlight,
+like coming home,
+like the best part of my day
+condensed into a single, fleeting moment
+I never want to end.
+</div>
+
+<div id="p20" class="hidden-content">
+The moon has traveled billions of years,
+collected every scar the universe could throw
+asteroids, comets, the debris of space,
+all those ancient marks we see from here.
+
+And still we look up at it in wonder,
+still it lights our way home.
+
+But you
+you make the moon look like a rough draft,
+like the universe was just practicing
+before it got to you.
+
+They say nothing's flawless,
+that everything beautiful has its cracks,
+its rough edges, its worn-down parts.
+
+Maybe that's true for everything else.
+
+But when I look at you,
+I forget what flaws even are.
+I forget that perfect was supposed
+to be impossible.
+
+You're the exception to every rule
+about how nothing can be whole,
+the one thing in this scarred-up world
+that makes me believe in immaculate.
+
+Even the moon has craters
+wears its damage like a map.
+
+But you? You're perfect.
+</div>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+        <div id="contentDisplay"></div>
+    </div>
+</div>
+
+</div>
+
+<script>
+
+function showLetters() {
+    document.getElementById("mainMenu").style.display = "none";
+    document.getElementById("lettersSection").style.display = "grid";
+    document.getElementById("poemsSection").style.display = "none";
+    document.getElementById("backButton").style.display = "flex";
+    document.body.className = "letters-theme";
+}
+
+function showPoems() {
+    document.getElementById("mainMenu").style.display = "none";
+    document.getElementById("lettersSection").style.display = "none";
+    document.getElementById("poemsSection").style.display = "block";
+    document.getElementById("backButton").style.display = "flex";
+    document.body.className = "dark-theme";
+}
+
+function goBack() {
+    document.getElementById("mainMenu").style.display = "block";
+    document.getElementById("lettersSection").style.display = "none";
+    document.getElementById("poemsSection").style.display = "none";
+    document.getElementById("backButton").style.display = "none";
+    document.body.className = "soft-theme";
+}
+
+function openContent(id){
+    document.getElementById("contentDisplay").innerHTML =
+    document.getElementById(id).innerHTML;
+    document.getElementById("modal").style.display="flex";
+}
+
+function closeModal(){
+    document.getElementById("modal").style.display="none";
+}
+
+window.onclick=function(e){
+    if(e.target==document.getElementById("modal")){
+        closeModal();
+    }
+}
+
+</script>
+
+</body>
+</html>
